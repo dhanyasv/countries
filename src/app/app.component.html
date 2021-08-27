@@ -6,12 +6,15 @@
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 <!-- * * * * * * * * * * End of Placeholder * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-
-<ul>
-    <li><a routerLink="" routerLinkActive="active">Home</a>
-        <li><a routerLink="/countries" routerLinkActive="active">Countries</a>
-
-    <li><a href="#about">About</a></li>
-  </ul>
+<div class="header" >
+    <header >
+        <ul>
+            <li><a routerLink="" routerLinkActive="active">Home</a>
+                <li><a routerLink="/countries" routerLinkActive="active">Countries</a>
+        
+            <li><a href="#about">About</a></li>
+          </ul>
+    </header>
+</div>
 <app-header *ngIf="visibility"></app-header>
 <router-outlet></router-outlet>

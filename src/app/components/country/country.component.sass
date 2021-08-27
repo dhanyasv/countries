@@ -2,24 +2,22 @@
     margin:0 auto
     width:50%
     padding-top:20px
+    position:relative
 .item1  
   grid-area: details
 .item2  
   grid-area: flag
-
-.grid-container 
-  display: grid
-  grid-template-areas:"details details flag flag""details details flag flag"
-  grid-gap: 10px
 .grid-container > div 
-  background-color: lightblue
-  padding: 20px 0
+  background-color: #c5cfdc
+  padding: 20px
   font-size: 30px
+  border-radius:4px
+ul
+    padding-left:0
 .main-list > li
     padding: 10px
     list-style-type: none
-    color: brown
-    font-family: monospace
+    color: #112642
 
 .country-btn
     border: none
@@ -28,9 +26,40 @@
     padding: 10px
     border-radius: 0px 20px 0px 20px
     margin-bottom: 20px
-    background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1))
+    background-image: linear-gradient(to right, rgba(255,0,0,0),  #ffd740)
     font-size: 17px
     font-family: emoji
     cursor: pointer
+    color:#112642
+.lang-list
+     padding-left:30px
+@media only screen and (max-width: 600px)
+ .grid-container 
+    display: grid
+    grid-template-areas:"details details"" flag flag"
+    grid-gap: 10px
 
+@media only screen and (min-width: 600px)
+ .grid-container 
+    display: grid
+    grid-template-areas:"details details"" flag flag"
+    grid-gap: 10px
+
+@media only screen and (min-width: 768px)
+ .grid-container 
+    display: grid
+    grid-template-areas:"details details"" flag flag"
+    grid-gap: 10px
+
+@media only screen and (min-width: 992px)
+ .grid-container 
+    display: grid
+    grid-template-areas:"details details flag flag"
+    grid-gap: 10px
+
+@media only screen and (min-width: 1200px)
+ .grid-container 
+    display: grid
+    grid-template-areas:"details details flag flag"
+    grid-gap: 10px
     

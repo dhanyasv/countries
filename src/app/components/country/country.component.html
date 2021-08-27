@@ -12,7 +12,7 @@
             <li><h3><b>TimeZone&nbsp;:&nbsp;</b>{{country.timezones[0]}}</h3></li>
             <li><h3><b>Population&nbsp;:&nbsp;</b>{{country.population}}</h3></li>
             <li><h3><b>Languages&nbsp;:&nbsp;</b></h3>
-                <ul>
+                <ul class="lang-list">
                     <li *ngFor="let lang of country.languages">
                         <h3>{{lang.name}}</h3>
                     </li>

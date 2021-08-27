@@ -9,13 +9,6 @@
       background-repeat: no-repeat;
       background-size: cover;
   }
-  .banner-btn-div {
-    position: absolute;
-    top: 50%;
-    left:40%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-  }
   .banner-btn {
     height: 50px;
     width: 300px;
@@ -24,7 +17,60 @@
     background-color: lightblue;
     opacity: 0.6;
     font-size: 28px;
- 
     font-weight: bold;
     color: white;
   }
+  /* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .banner-btn-div {
+    position: absolute;
+    top: 20%;
+    left: 15%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .banner-btn-div {
+    position: absolute;
+    top: 20%;
+  left: 15%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .banner-btn-div {
+    position: absolute;
+    top: 50%;
+    left:40%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .banner-btn-div {
+    position: absolute;
+    top: 50%;
+    left:40%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .banner-btn-div {
+    position: absolute;
+    top: 50%;
+    left:40%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+}
