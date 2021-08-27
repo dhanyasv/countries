@@ -1,6 +1,6 @@
 
   .home-banner {
-      background-image: url('/../../../assets/countrybg.jpeg');
+      background-image: url('/assets/countrybg.jpeg');
       height: 100%;
 
       /* Center and scale the image nicely */
