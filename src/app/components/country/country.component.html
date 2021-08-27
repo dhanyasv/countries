@@ -1,0 +1,26 @@
+<div class="country-container">
+    <mat-spinner style="margin:0 auto" *ngIf="loading"></mat-spinner>
+    <button class="country-btn" *ngIf="!loading" (click)="backClicked()">
+      Go Back To Countries
+    </button>
+<div class="grid-container" *ngIf="country">
+    <div class="item1">
+        <ul class="main-list">
+            <li><h1>{{country.name}}</h1></li>
+            <li><h3><b>Capital&nbsp;:&nbsp;</b>{{country.capital}}</h3></li>
+            <li><h3><b>Regin&nbsp;:&nbsp;</b>{{country.region}}</h3></li>
+            <li><h3><b>TimeZone&nbsp;:&nbsp;</b>{{country.timezones[0]}}</h3></li>
+            <li><h3><b>Population&nbsp;:&nbsp;</b>{{country.population}}</h3></li>
+            <li><h3><b>Languages&nbsp;:&nbsp;</b></h3>
+                <ul>
+                    <li *ngFor="let lang of country.languages">
+                        <h3>{{lang.name}}</h3>
+                    </li>
+                </ul>
+            </li>
+            </ul>
+    </div>
+    <img class="item2" [src]=country.flag alt="Avatar" style="object-fit: fill;width:100%;height:200px">
+    
+  </div>
+</div>

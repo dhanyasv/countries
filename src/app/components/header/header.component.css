@@ -1,0 +1,30 @@
+
+  .home-banner {
+      background-image: url('../../../assets/countrybg.jpeg');
+      position: relative;
+      height: 100%;
+
+      /* Center and scale the image nicely */
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+  }
+  .banner-btn-div {
+    position: absolute;
+    top: 50%;
+    left:40%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  .banner-btn {
+    height: 50px;
+    width: 300px;
+    border: none;
+    border-radius: 28px 0px 28px 0px;
+    background-color: lightblue;
+    opacity: 0.6;
+    font-size: 28px;
+ 
+    font-weight: bold;
+    color: white;
+  }

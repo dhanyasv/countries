@@ -1,0 +1,24 @@
+<div class="country-container">
+    <mat-spinner style="margin:0 auto" *ngIf="loading"></mat-spinner>
+    <mat-form-field *ngIf="!loading" class="example-full-width" appearance="fill">
+        <mat-label>Search A country</mat-label>
+        <input matInput placeholder="Ex. Australia" [(ngModel)]="term">
+      </mat-form-field>
+    <div class="card-container flip-card">
+        <div class="flip-card-inner" style="padding:10px" *ngFor="let country of countries |filter:term">
+          <a style="text-decoration:none;color:#1e395c" 
+          [routerLink]="['/countries', country.alpha2Code]"
+          routerLinkActive="active">  
+          <div class="flip-card-front" style="height:200px;">
+            <img [src]=country.flag alt="Avatar" style="width:100%;height:200px;object-fit: cover;">
+          </div>
+          <div class="flip-card-back" style="border:1px solid lightgray;border-radius:2px">
+            <h1 style="padding-top:10px">{{country.name}} ({{country.nativeName}})</h1>
+          </div>
+        </a>
+        </div>
+      </div>
+</div>
+
+
+
